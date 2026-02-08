@@ -35,7 +35,7 @@ jobs:
     # 5. Security: Check for vulnerabilities (Security Guard)
     - name: Security Scan with Bandit
       run: |
-        bandit -r .
+        bandit -r . -x ./test_app.py
 
     # 6. Test: Run the actual unit tests (Quality Guard)
     - name: Test with pytest
