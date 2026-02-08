@@ -3,7 +3,7 @@ name: Python CI/CD Pipeline
 # Trigger: Run this pipeline every time code is pushed to 'main'
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build-and-test:
